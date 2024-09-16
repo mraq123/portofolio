@@ -9,8 +9,12 @@ import {
   css,
   reactjs,
   redux,
+  mi,
   tailwind,
   nodejs,
+  sami,
+  quadra,
+  steradian,
   mongodb,
   git,
   figma,
@@ -19,24 +23,29 @@ import {
   starbucks,
   tesla,
   shopify,
+  sql,
   carrent,
+  coming,
   jobit,
   tripguide,
+  kementrian,
   threejs,
+  drawio,
+  postman,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Tentang",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Pengalaman",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Kontak",
   },
 ];
 
@@ -46,16 +55,16 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Frontend Developer",
+    icon: reactjs,
   },
   {
-    title: "Backend Developer",
+    title: "Backend (Basic)",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "UI/UX Designer (Basic)",
+    icon: figma,
   },
 ];
 
@@ -72,18 +81,12 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -96,10 +99,7 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+
   {
     name: "git",
     icon: git,
@@ -109,83 +109,62 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "sql",
+    icon: sql,
+  },
+  {
+    name: "drawio",
+    icon: drawio,
+  },
+  {
+    name: "postman",
+    icon: postman,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Data Entry",
+    company_name: "Kementrian Pertanian (PKL)",
+    icon: kementrian,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Nov 2018 - Des 2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Membuka surat masuk yang telah di kirim melalui ekspedisi. ",
+      "Merapihkan surat masuk yang telah di kirim melalui ekspedisi. ",
+      "Mengentry data surat masuk yang telah dirapihkan melalui website internal.",
+      "Mengirim surat yang telah di data ke ruangan yang ditentukan.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Intern Frontend Web Developer",
+    company_name: "PT Steradian Data Optima",
+    icon: steradian,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Aug 2023 - Oct 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Menerapkan desain antarmuka pengguna (UI) yang responsif dan intuitif sesuai spesifikasi proyek.",
+      "Mengintegrasikan data dari backend menggunakan API untuk memastikan tampilan data yang akurat dan real-time dalam aplikasi.",
+      "Mengoptimalkan elemen UI/UX untuk meningkatkan kenyamanan pengguna dan mengurangi waktu muat halaman",
+      "Debugging and fixing bugs untuk meningkatkan kinerja dan stabilitas aplikasi.",
+      "Menerapkan praktik terbaik dalam pengembangan frontend, termasuk penggunaan kontrol versi (Git) dan menjaga kebersihan kode",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Full Stack Web Developer",
+    company_name: "Madrasah Ibtidaiyah Iaanatul Ikhwan ",
+    icon: mi,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2024 - Jul 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Pembuatan projek aplikasi disekolah untuk bahan penelitian skripsi dan riset.",
+      "Pembuatan Desain UI/UX mudah digunakan berdasarkan analisis kebutuhan proyek, memastikan desain dapat terwujud diimplementasikan secara efektif.",
+      "Frontend dan Backend Mengembangkan frontend yang responsif dan backend yang kuat sesuai dengan spesifikasi proyek.",
     ],
   },
 ];
 
 const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
@@ -198,67 +177,78 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Quadra",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Website Internal untuk manajemen karyawan pada PT Steradian Data Optima.",
     tags: [
       {
-        name: "react",
+        name: "react ts",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgresql",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "material ui",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: quadra,
+    source_code_link: "https://quadra.steradian.co.id/auth",
   },
   {
-    name: "Job IT",
+    name: "SAMI APP",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web yang saya buat sebagai bahan skripsi dan kebutuhan pada sekolah dengan integrasi berbasis artificial intelligence",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mysql",
         color: "pink-text-gradient",
       },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: sami,
+    source_code_link: "https://samiapp.vercel.app/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "On Progress",
+    description: "COMING SOON",
     tags: [
       {
-        name: "nextjs",
+        name: "1",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "2",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "3",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: coming,
+    source_code_link: "",
   },
 ];
 
